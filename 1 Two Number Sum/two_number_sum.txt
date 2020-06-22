@@ -1,0 +1,13 @@
+Input: An array of elements, a target sum
+
+Return the pair of elements whose sum equals the target sum, else returns empty list.
+
+Three approaches:
+
+1. Using two nested for loops and try adding every two elements to check if equals target sum
+
+2. Creating a hash table and by traversing through array finding if the difference of the target sum and current element is present in the hash table, else updating the hash table.
+
+3. First sorting the array. Taking two pointer(variables) that store the first(left) and last(right) index values then adding the first and last item to check if the sum equals the target sum. If the obtained sum is less than the target, then increasing the left pointer to add more to the sum. If the obtained sum is greater than the target, decreasing the right pointer to decrease the obtained sum. Repeating until there is a possible match, else returning the empty list.
+
+The functions returns all the possible matches.
