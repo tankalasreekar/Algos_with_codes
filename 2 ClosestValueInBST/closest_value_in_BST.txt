@@ -1,0 +1,15 @@
+To find the closest value to the target value in binary search tree
+
+Inputs: BST, target value
+
+1. First create a variable to keep track of the closest value and initialise it with inf/null/none.
+2. We start at the root node.
+3. Compare the current value and the target, by calculating the absolute difference betweeen them.
+4. Also we calculate the abs. diff. between the current closest value and target value.
+5. Then by comparing both the absolute differences we update the closest value accordingly.
+6. Now, we decide which side of the BST to traverse next.
+7. By comparing the current value and the target value, if the current is less than the target left side of the BST is not considered because the values left to the element in BST are less than the element, and the abs. diff. would increase if we traverse that side.
+8. Then the next element of the appropriate branch is selected as the current value.
+9. Again, repeat the steps from 2 to 8 until there is no branch/ nodes are left.
+10. Then return the closest value.
+11. If the abs. diff. is zero at any point in the traversal, we can update the closest value and break the process.
