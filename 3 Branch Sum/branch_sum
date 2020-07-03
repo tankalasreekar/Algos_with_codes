@@ -1,0 +1,11 @@
+To find the branch sums of all the branches of the binary tree
+
+Inputs: BST
+
+Procedure:
+(Recursive Approach)
+
+1. Starting at the root node with a variable running sum equal to zero
+2. Following the depth first approach to traverse through the branches of the BST
+3. At every level of the tree we calculate the running sum upto that node and pass the sum along with the side branch of the tree to the recursive function
+4. The recursion continues until the leaves of the tree and returns the branch sum at the leave 
